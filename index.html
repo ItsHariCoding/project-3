@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel= "Stylesheets" href ="style.css">
+  <title>Dropdown on Hover</title>
+  <style>
+    body{
+        background-image:url(c9e8592b-dc28-436f-9267-5cf0f2e6e56f.jpeg);
+        height: 100vh; 
+        background-size: cover; 
+    }
+    .back{
+        background-color: white;
+        border: 5px solid black;
+    }
+    .table{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    table,th,td{
+        padding: 50;
+       
+       
+    }
+    th,td{
+        background-color: white;
+    }
+    select{
+        cursor: pointer;
+        border-width: 5px;
+        height: 50px;
+        font-size: 15px;
+        background-color:white;
+    }
+    .main{
+        text-align: center;
+    }
+    button{
+        padding:10px;
+        height: 40px;
+        width: 90px;
+        background-color: black;
+        color: white;
+    }
+    input,select{
+        width: 500px;
+        height: 50px;
+        font-size: 30px;
+        background-color: white;
+        border-color: black;
+    }
+    input:focus{
+        background-color: rgb(216, 210, 210);
+    }
+    select:focus{
+        background-color: rgb(216, 210, 210);
+    }
+
+   
+  </style>
+</head>
+<body>
+    <div class = "table">
+    <div class="back">
+    <table>
+        
+        <tr style="text-align: center; text-decoration: underline;"><th colspan="3"><h1>Registration Form</h1></th></tr>
+        <tr>
+            <th style="text-align: left;"><h2>Register Number</h2></th>
+            <th><h2>:</h2></th>
+            <th><input placeholder="enter register number"></th>
+        </tr>
+        <tr>
+            <th style="text-align: left;"><h2>Student Name</h2></th>
+            <th>:</th>
+            <th><input placeholder="enter name"> </th>
+        </tr>
+        <tr>
+            <th style="text-align: left;"><h2>Department</h2></th>
+            <th>:</th>
+            <th>
+                <select> 
+                    <option><h2>Computer Science</h2></option>
+                    <option><h2>Electronics and Communication</h2></option>
+                    <option><h2>Electrical and Electronics</h2></option>
+                    <option><h2>Information Technology</h2></option>
+                    <option><h2>Civil Department</h2></option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th style="text-align: left;"><h2>HSC percentage</h2></th>
+            <th>:</th>
+            <th><input placeholder="enter percentage" ></th>
+        </tr>
+        <tr>
+            <th style="text-align: left;"><h2>SSLC percentage</h2></th>
+            <th>:</th>
+            <th><input placeholder="enter percentage"></th>
+        </tr>
+        <tr>
+            <th style="text-align: left;"><h2>Degree percentage</h2></th>
+            <th>:</th>
+            <th><input placeholder="convert CGPA to percentage"></th>
+        </tr> 
+        <tr>
+            <td></td>
+            <td></td>
+            <td colspan="3"><button>Submit</button>
+                <button>Clear</button></td>
+        </tr>
+    </table>
+</div>
+</div>
+        
+</body>
+</html>
